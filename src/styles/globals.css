@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --purple: #7C0CF8;
+  --background: #111111;
+  --text: rgba(255, 255, 255, 0.5);
+  --black: #202020;
+}
+
+#__next{
+  display: flex;
+}
+
+#__next > main {
+  flex: 1;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+
+  #__next{
+    display: block;
+  }
+}
+
+
+body {
+  background: var(--background);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+body,
+input,
+textarea,
+button {
+  font: 400 1.4rem 'Lato';
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

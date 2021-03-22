@@ -1,0 +1,106 @@
+.navWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 8rem;
+    background: #202020;
+    padding: 3rem;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.wrapperIcon {
+    height: 36px;
+}
+
+.wrapperIcon:hover .menuIcon::after,
+.wrapperIcon:hover .menuIcon::before,
+.wrapperIcon:hover .menuIcon{
+      background: rgba(255, 255, 255, 0.99);
+}
+
+ 
+.menuIcon {
+    width: 20px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    display: block;
+    position: relative;
+    float: right;
+    border-radius: 20px;
+    transition-delay: 200ms;
+}
+
+
+.menuIcon::before,
+.menuIcon::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    right: 0;
+    width: 20px;
+    transition: 0.2s all cubic-bezier(0.4, -0.1, 0, 1.1);
+    border-radius: 20px;
+}
+
+
+.menu-opened .menuIcon {
+    height: 0;
+    transition: 0;
+}
+
+.menuIcon:before {
+    margin-top: -8px;
+    transition-delay: 100ms;
+}
+
+.menuIcon:after {
+    margin-top: 8px;
+    transition-delay: 300ms;
+}
+
+.menu-block {
+    transition: 0.2s all cubic-bezier(0.4, -0.1, 0, 1.1);
+}
+
+.myName {
+    font-weight: 900;
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+    color: rgba(255, 255, 255, 0.2);
+    transform: rotate(-90deg) translateX(50%);
+    white-space: nowrap;
+}
+
+.myName span {
+    animation: fillName 10s infinite;
+}
+
+.myName > span:last-child {
+    animation-delay: 1s;
+}
+
+@keyframes fillName {
+    0% {
+      color: rgba(255, 255, 255, 0.2);
+    }
+
+    50% {
+        color: var(--purple);
+    }
+
+    100% {
+        color: rgba(255, 255, 255, 0.2);
+    }
+}
+
+@media(max-width: 767px) {
+    .navWrapper {
+        display: none;
+    }
+}
+
