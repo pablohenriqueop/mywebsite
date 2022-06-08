@@ -24,10 +24,6 @@ html {
   font-size: 62.5%;
 }
 
-html.overflow-hidden {
-  overflow: hidden;
-}
-
 @media (max-width: 767px) {
   html {
     font-size: 50%;
