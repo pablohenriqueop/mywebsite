@@ -402,10 +402,6 @@ section.hero .container {
     padding: 3.5rem;
   }
 
-  .wrapperJobs {
-    display: block;
-  }
-
   .container {
     flex-direction: column !important;
     max-width: 100% !important;
@@ -444,5 +440,11 @@ section.hero .container {
 
   .mainFooter .container {
     align-items: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapperJobs {
+    display: block;
   }
 }
