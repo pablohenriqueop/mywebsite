@@ -6,13 +6,13 @@
 
 :root {
   --white: #fff;
-  --purple: #7C0CF8;
-  --background: #111111;
+  --purple: #7c0cf8;
+  --background: #030303;
   --text: rgba(255, 255, 255, 0.5);
   --black: #202020;
 }
 
-#__next{
+#__next {
   display: flex;
 }
 
@@ -24,16 +24,19 @@ html {
   font-size: 62.5%;
 }
 
+html.overflow-hidden {
+  overflow: hidden;
+}
+
 @media (max-width: 767px) {
   html {
     font-size: 50%;
   }
 
-  #__next{
+  #__next {
     display: block;
   }
 }
-
 
 body {
   background: var(--background);
@@ -45,7 +48,7 @@ body,
 input,
 textarea,
 button {
-  font: 400 1.4rem 'Lato';
+  font: 400 1.4rem "Lato";
 }
 
 button {
