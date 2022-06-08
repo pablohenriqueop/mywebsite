@@ -80,7 +80,7 @@ export default function Home() {
             </div>
             <div className={styles.right}>
               <p>
-                Graduado em Sistemas Para Internet, atualmente trabalho com
+                Graduado em Sistemas para Internet, atualmente trabalho com
                 desenvolvimento web focado em JavaScript, meus principais
                 conhecimentos são em React, VueJS, React Native, AdonisJS e
                 NestJS principalmente.
@@ -89,12 +89,12 @@ export default function Home() {
                 Por 3 anos tive um perfil fullstack e nos últimos 3 anos tenho
                 focado em ser especialista em front-end e seu ecossistema, mas
                 também tenho curiosidade e sempre estou estudando algo
-                relacionado ao mundo do back-end e devops
+                relacionado ao mundo do back-end e devops.
               </p>
               <p>
                 Quando não estou trabalhando ou estudando, estou passando um
                 tempo com a família, jogando algum joguinho ou praticando meu
-                principal hobby que é tocar bateria e flauta🥁
+                principal hobby que é tocar bateria e flauta. 🥁
               </p>
             </div>
           </div>

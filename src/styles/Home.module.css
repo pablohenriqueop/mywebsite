@@ -247,6 +247,7 @@ section.hero .container {
   color: rgba(255, 255, 255, 0.5);
   line-height: 219%;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .about .container {
