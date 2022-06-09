@@ -14,7 +14,7 @@
 
 .wrapperIcon {
   position: relative;
-  width: 50px;
+  width: 30px;
 }
 
 .wrapperIcon:before,
@@ -23,11 +23,12 @@
   background: #fff;
   content: "";
   display: block;
-  height: 6px;
+  height: 3px;
   border-radius: 3px;
   margin: 7px 0;
   transition: 0.5s;
   opacity: 0.5;
+  animation: fillMenuIcon 7s infinite;
 }
 
 .wrapperIcon:hover:before,
@@ -36,19 +37,19 @@
   opacity: 1;
 }
 
-.wrapperIcon:hover div {
-  transition-delay: 200ms;
+.wrapperIcon div {
+  animation-delay: 400ms;
 }
 
-.wrapperIcon:hover:after {
-  transition-delay: 300ms;
+.wrapperIcon:after {
+  animation-delay: 600ms;
 }
 
 .menuOpened .wrapperIcon:before {
   transform: translateY(12px) rotate(135deg);
 }
 .menuOpened .wrapperIcon:after {
-  transform: translateY(-12px) rotate(-135deg);
+  transform: translateY(-8px) rotate(-135deg);
 }
 .menuOpened .wrapperIcon div {
   transform: scale(0);
@@ -174,6 +175,20 @@
     transform: translateX(0);
     opacity: 1;
     visibility: visible;
+  }
+}
+
+@keyframes fillMenuIcon {
+  0% {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  50% {
+    background: var(--purple);
+  }
+
+  100% {
+    background: rgba(255, 255, 255, 0.2);
   }
 }
 

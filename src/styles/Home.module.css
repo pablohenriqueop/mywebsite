@@ -17,42 +17,16 @@
   border-radius: 2px;
   font-size: 10px;
   letter-spacing: 0.3em;
-  color: var(--purple);
+  color: var(--white2);
   transition: 250ms ease-in-out;
   position: relative;
   overflow: hidden;
-}
-
-.btn:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 150%;
-  height: 100%;
-  background: #37474f;
-  z-index: -1;
-  -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-  transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
-  -webkit-transform-origin: 0 100%;
-  transform-origin: 0 100%;
-  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s,
-    background-color 0.3s;
-  -webkit-transition: opacity 0.3s, background-color 0.3s,
-    -webkit-transform 0.3s;
-  transition: opacity 0.3s, background-color 0.3s, -webkit-transform 0.3s;
-  transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
-  transition: transform 0.3s, opacity 0.3s, background-color 0.3s,
-    -webkit-transform 0.3s;
-}
-
-.btn:hover:before {
-  opacity: 1;
   background-color: var(--purple);
-  -webkit-transform: rotate3d(0, 0, 1, 0deg);
-  transform: rotate3d(0, 0, 1, 0deg);
-  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.btn:hover {
+  background-color: var(--purple-hover);
+  border: 1px solid var(--purple-hover);
 }
 
 .btn:hover {
@@ -80,7 +54,7 @@ section.hero .container {
 .textWrapper h1 {
   font-size: 5.5rem;
   line-height: 120%;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--white2);
   font-weight: 900;
   margin-bottom: 1.5rem;
 }
@@ -91,7 +65,7 @@ section.hero .container {
 }
 
 .textWrapper p {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--white2);
   line-height: 191.4%;
   max-width: 618px;
 }
@@ -156,6 +130,21 @@ section.hero .container {
   margin-left: 2rem;
 }
 
+.socialIcons svg path,
+.socialIcons svg rect,
+.socialIcons svg circle {
+  transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.socialIcons svg:hover path,
+.socialIcons svg:hover rect {
+  fill: var(--purple);
+}
+
+.socialIcons svg:hover circle {
+  stroke: var(--purple);
+}
+
 .myImageWrapper {
   width: 21vw;
   position: relative;
@@ -175,7 +164,7 @@ section.hero .container {
   z-index: 10;
   background-color: var(--purple);
   border-radius: 2px;
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--white2);
   height: 35px;
   padding: 0 13px;
   display: flex;
@@ -237,17 +226,16 @@ section.hero .container {
 .about h2 {
   line-height: 130%;
   font-size: 2.5rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--white2);
   font-weight: 900;
   margin-bottom: 13px;
 }
 
 .about p {
   font-size: 1.6rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--white2);
   line-height: 219%;
   margin-bottom: 20px;
-  text-align: justify;
 }
 
 .about .container {
@@ -267,7 +255,7 @@ section.hero .container {
   font-weight: 900;
   font-size: 130px;
   line-height: 100%;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--white2);
   width: 800px;
   max-width: 100%;
   margin-top: -11.5rem;
@@ -322,7 +310,7 @@ section.hero .container {
 
 .descriptionJobs h3 {
   font-size: 1.8rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--white2);
   font-weight: 900;
   line-height: 100%;
   margin-bottom: 10px;
@@ -330,11 +318,11 @@ section.hero .container {
 
 .descriptionJobs span {
   font-weight: 900;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--white2);
 }
 
 .descriptionJobs p {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--white2);
 }
 
 .wrapperCall {
@@ -380,7 +368,7 @@ section.hero .container {
 .mainFooter h3 {
   font-weight: 400;
   line-height: 140%;
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--white2);
   font-size: 1.8rem;
 }
 

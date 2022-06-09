@@ -6,10 +6,12 @@
 
 :root {
   --white: #fff;
+  --white2: rgba(255, 255, 255, 0.8);
   --purple: #7c0cf8;
   --background: #030303;
   --text: rgba(255, 255, 255, 0.5);
   --black: #202020;
+  --purple-hover: #4e0f95;
 }
 
 #__next {
