@@ -122,7 +122,6 @@ section.hero .container {
 
 .socialIcons {
   display: flex;
-  margin-top: 2rem;
   align-items: center;
 }
 
@@ -363,6 +362,7 @@ section.hero .container {
 
 .mainFooter .container {
   justify-content: space-between;
+  align-items: center;
 }
 
 .mainFooter h3 {
@@ -424,6 +424,10 @@ section.hero .container {
 
   .logoFooter {
     margin: 3rem 0;
+  }
+
+  .socialIcons {
+    margin-top: 2rem;
   }
 
   .mainFooter .container {
