@@ -47,6 +47,10 @@ section.hero .container {
   flex-direction: column;
 }
 
+section.hero .socialIcons {
+  margin-top: 2rem;
+}
+
 .textWrapper {
   max-width: 810px;
 }

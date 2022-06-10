@@ -101,6 +101,7 @@ export default function Home() {
               src="/img/pablohenrique.jpg"
               alt="Pablo Henrique"
               layout="fill"
+              quality="100"
             />
             <span className={styles.myTag}>SOFTWARE ENGINEER</span>
           </div>
