@@ -1,21 +1,10 @@
-import Document, { Html, Head, Main, NextScript, Script } from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 
 export default class MyDocument extends Document {
   render() {
     return (
       <Html>
         <Head>
-          <Script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-ETG9WP4T77"
-          ></Script>
-
-window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ETG9WP4T77');
-
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             rel="apple-touch-icon"
