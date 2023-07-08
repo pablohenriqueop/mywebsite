@@ -112,10 +112,10 @@ export default function Home() {
               <div className={styles.wrapperText}>
                 <h2>Me conheça um pouco.</h2>
                 <p>
-                  Desenvolvedor front-end há 5 anos, já tive experiência com
+                  Desenvolvedor front-end há 7 anos, já tive experiência com
                   variados produtos digitais, com expertise no setor de
-                  Construção Civil e Cosméticos. Atualmente trabalho no Grupo
-                  Boticário como desenvolvedor front-end sênior.
+                  Construção Civil e Varejo de Cosméticos. Atualmente trabalho
+                  na Stone como Software Engineer III.
                 </p>
                 <a
                   href="https://www.linkedin.com/in/pablo-pinheiro-999960101/"
@@ -130,11 +130,10 @@ export default function Home() {
               <p>
                 Graduado em Sistemas para Internet, atualmente trabalho com
                 desenvolvimento web focado em JavaScript, meus principais
-                conhecimentos são em React, VueJS, React Native, AdonisJS e
-                NestJS principalmente.
+                conhecimentos são em React, React Native e VueJS.
               </p>
               <p>
-                Por 3 anos tive um perfil fullstack e nos últimos 3 anos tenho
+                Por 3 anos tive um perfil fullstack e nos últimos 4 anos tenho
                 focado em ser especialista em front-end e seu ecossistema, mas
                 também tenho curiosidade e sempre estou estudando algo
                 relacionado ao mundo do back-end e devops.
